@@ -6,6 +6,7 @@ body {
   transform: translateY(-50%);
   width: 100%;
   background: #ffeaa7;
+  overflow: hidden;
 }
 
 a.title {
