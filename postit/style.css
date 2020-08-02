@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  background: #ffeaa7;
+}
+
+div.bartool {
+  background: #3c6382;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  margin-top: 10px;
+}
+
+ul.bartool {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+
+a.bot {
+  text-decoration: none;
+  color: black;
+}
+
+a.commands {
+  font-size: 20px;
+}

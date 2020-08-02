@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  border-color: grey;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  margin-left: 10px;
+}
+
+p.border {
+  border-color: grey;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  margin-left: 10px;
+}
+
+p.no {
+  margin-left: 10px
+}
+
+li {
+  margin-left: 30px;
+}
+
+h1 {
+  margin-left: 10px;
+}

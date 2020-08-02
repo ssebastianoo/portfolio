@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    background: #ffeaa7;
+  }
+  
+.title {
+    background: #fdcb6e;
+    color: black;
+    border-radius: 30px;
+    padding: 7px 7px;
+    font-size: 50px;
+}
+  
+.link {
+    background: #e17055;
+    margin-left: 7px;
+    color: black;
+    font-size: 20px;
+} 
+
+.otherr {
+  background: #e17055;
+  color: black;
+  font-size: 30px;
+}
+  
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+i {
+    font-size: 35px;
+}
+
+p {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 50px;
+}

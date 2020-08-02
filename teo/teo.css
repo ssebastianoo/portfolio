@@ -1,0 +1,78 @@
+body {
+  background: #fad390;
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+div.postit {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+}
+
+div.bartool {
+  background: #3c6382;
+  font-family: 'Courier New', Courier, monospace
+}
+
+ul.bartool {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  display: inline-block
+}
+
+a.bot {
+  text-decoration: none;
+  color: #82ccdd;
+}
+
+div.teo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+}
+
+a.watchdog {
+  background: #60a3bc
+}
+
+a.invite {
+  background: #f8c291;
+  text-decoration: none;
+  color: #e55039;
+  display: inline-block;
+  padding: 13px 13px;
+  border-radius: 25px;
+  transition-duration: .5s
+}
+
+a.invite:hover {
+  font-size: 40px;
+}
+
+a.docs {
+  background: #78e08f;
+  text-decoration: none;
+  color: #079992;
+  display: inline-block;
+  padding: 13px 13px;
+  border-radius: 25px;
+  transition-duration: .5s
+}
+
+a.docs:hover {
+  font-size: 40px;
+}
+
+a.commands {
+  background-color: black;
+  color: white;
+}
+
+a.li {
+  background-color: black;
+  color: white;
+}
