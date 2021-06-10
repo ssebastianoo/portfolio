@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-60%);
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Ubuntu Mono', monospace;
+  background: #2f3640;
+  color: #dcdde1;
+  font-size: 150%;
+}
+
+a {
+  color: #fbc531;
+}
