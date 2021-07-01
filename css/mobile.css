@@ -4,6 +4,10 @@ body {
   color: #dcdde1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   transition-duration: .3s;
@@ -46,3 +50,14 @@ a:not(.black):hover {
   width: 200px;
 }
 
+.welp {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-down {
+  display: none;
+}
