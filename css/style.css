@@ -11,10 +11,6 @@ html {
 
 .container {
   font-size: 150%;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-60%);
-  width: 100%;
 }
 
 a {
