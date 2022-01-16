@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import SebPic from './cdn/logo.png';
+import MetaTags from 'react-meta-tags';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -34,14 +35,37 @@ function Social(props) {
  )
 }
 
-class App extends React.Component {
-  componentDidMount() {
-    document.title = 'seb';
-  }
+function Meta(props) {
+  return (
+    <MetaTags>
+      <title>{props.title}</title>
+      <meta name="description" content={props.description} />
+      <meta name="keywords" content={props.keywords} />
+      <meta name="author" content={props.username} />
+      <meta name="theme-color" content={props.themeColor} />
+      <meta name="twitter:name" content={props.author} />
+      <meta name="twitter:description" content={props.description} />
+      <meta name="twitter:site" content={"@" + props.username} />
+      <meta name="twitter:creator" content={"@" + props.username} />
+      <meta property="og:title" content={props.title} />
+      <meta property="og:description" content={props.description} />
+      <meta property="og:image" content={props.image} />
+    </MetaTags>
+  )
+}
 
+class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Meta title="seb"
+              description="im seb, i code stuff, usually for the web" 
+              keywords="ssebastianoo, Sebastiano, python dev, python, developer, sebastiano girotto, girotto, gir8, sebastiano gir8, @ssebastianoo, web developer, javascript developer, python developer"
+              author="seb"
+              username="ssebastianoo"
+              image={SebPic}
+              themeColor="#1c1e26"
+        />
         <div className="Info">
           <div className="SebPic">
             <img src={SebPic} alt="seb"/>
