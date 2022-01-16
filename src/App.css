@@ -12,6 +12,25 @@ body {
   background-color: var(--first-color);
   color: var(--second-color);
   font-family: var(--font);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 700px) {
+  body {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    width: unset;
+    overflow-x: unset;
+  }
 }
 
 .SebPic img {
@@ -23,14 +42,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .InfoText {
-  max-width: 160px;
+  max-width: 250px;
+  letter-spacing: 4px;
 }
 
 .Socials {
-  margin-top: 70px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +66,17 @@ body {
   color: unset;
   text-decoration: unset;
   color: var(--third-color);
+  transition: color .2s;
+}
+
+.Social a:hover {
+  color: var(--fourth-color);
+}
+
+.ProjectsTitle {
+  margin: 25px 0 40px;
+  text-align: center;
+  letter-spacing: 20px;
 }
 
 .Projects {
