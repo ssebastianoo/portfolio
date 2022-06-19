@@ -41,7 +41,7 @@
         />
         <Project
             title="venice freestyle lab"
-            description="website for Venice FreeStyle Lab"
+            description="website for venice freestyle lab"
             url="https://preview.venicefreestyle.com"
         />
         <Project
