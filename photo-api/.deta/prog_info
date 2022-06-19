@@ -1,0 +1,1 @@
+{"id":"8484d9a8-a228-4c1e-a759-14c336bcf1d9","space":25078,"runtime":"python3.9","name":"picsapi","path":"xs3lmn","project":"a0cyche1","account":"144798365827","region":"eu-central-1","deps":["flask","requests"],"envs":["KEY","USERNAME"],"public":false,"log_level":"off","cron":""}

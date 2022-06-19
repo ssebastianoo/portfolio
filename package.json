@@ -1,0 +1,34 @@
+{
+	"name": "ssebastianoo",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"prepare": "svelte-kit sync",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"format": "prettier --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@fortawesome/free-brands-svg-icons": "^6.1.1",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"sass": "^1.52.3",
+		"svelte": "^3.46.0",
+		"svelte-preprocess": "^4.10.7"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/fira-mono": "^4.5.8",
+		"@lukeed/uuid": "^2.0.0",
+		"cookie": "^0.4.1",
+		"svelte-fa": "^3.0.2",
+		"svelte-typewriter": "^3.0.0-alpha.11"
+	}
+}
