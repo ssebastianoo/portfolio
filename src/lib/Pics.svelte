@@ -25,12 +25,12 @@
     .pics {
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        overflow: auto;
+        margin: 20px 0;
 
         img {
-            width: 300px;
-            margin: 50px;
+            height: 200px;
+            margin: 15px 50px;
         }
     }
 

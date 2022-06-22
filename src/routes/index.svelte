@@ -6,6 +6,83 @@
 	import Skill from '$lib/Skill.svelte';
 	import Social from '$lib/Social.svelte';
 	import Pics from '$lib/Pics.svelte';
+
+	const skills = [
+		{
+			image: 'https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png',
+			url: 'https://www.w3schools.com/html/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/512px-CSS3_logo.svg.png',
+			url: 'https://www.w3schools.com/css/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png',
+			url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
+			url: 'https://reactjs.org/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png',
+			url: 'https://nextjs.org/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png',
+			url: 'https://sass-lang.com/'
+		},
+		{
+			image:
+				'https://www.gstatic.com/devrel-devsite/prod/v2325d8c952b9b608081f2b039989eacb0148117feedf74c3efc58771dfb973db/firebase/images/touchicon-180.png',
+			url: 'https://firebase.google.com/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png',
+			url: 'https://www.python.org/'
+		},
+		{
+			image: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
+			url: 'https://git-scm.com/'
+		},
+		{
+			image: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png',
+			url: 'https://expressjs.com/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png',
+			url: 'https://nodejs.org/'
+		},
+		{
+			image: 'https://www.corsinvest.it/wp-content/uploads/2019/10/mysql-icon-3.png',
+			url: 'https://www.mysql.com/'
+		},
+		{
+			image:
+				'https://w.namu.la/s/bbde860dbfce579361e8798eae0e121c552405da431c48ba628ae113ee5a400122e79799cf7133364839758121c40b04aaba1b0dadfd478d82fb95af70b79c9fb99265261ca690ee6a41d8343fcc273a',
+			url: 'https://discordpy.readthedocs.io/en/stable/'
+		},
+		{
+			image: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg',
+			url: 'https://socket.io/'
+		},
+		{
+			image: 'https://flask-training-courses.uk/images/flask-logo.png',
+			url: 'https://flask.palletsprojects.com/'
+		},
+		{
+			image:
+				'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png',
+			url: 'https://svelte.dev/'
+		}
+	];
 </script>
 
 <main>
@@ -24,7 +101,7 @@
 		<Social url="https://twitter.com/ssebastianoo" icon={faTwitter} />
 		<Social url="https://github.com/ssebastianoo" icon={faGithub} />
 		<Social url="https://instagram.com/sbstngrtt" icon={faInstagram} />
-        <Social url="https://www.linkedin.com/in/sebastianogirotto/" icon={faLinkedin} />
+		<Social url="https://www.linkedin.com/in/sebastianogirotto/" icon={faLinkedin} />
 	</div>
 	<h2 class="title">projects</h2>
 	<div class="projects">
@@ -46,77 +123,16 @@
 	</div>
 	<h2 class="title">skills</h2>
 	<div class="skills">
-		<Skill
-			image="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"
-			url="https://www.w3schools.com/html/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/512px-CSS3_logo.svg.png"
-			url="https://www.w3schools.com/css/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
-			url="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-			url="https://reactjs.org/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png"
-			url="https://nextjs.org/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png"
-			url="https://sass-lang.com/"
-		/>
-		<Skill
-			image="https://www.gstatic.com/devrel-devsite/prod/v2325d8c952b9b608081f2b039989eacb0148117feedf74c3efc58771dfb973db/firebase/images/touchicon-180.png"
-			url="https://firebase.google.com/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
-			url="https://www.python.org/"
-		/>
-		<Skill
-			image="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
-			url="https://git-scm.com/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
-			url="https://expressjs.com/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
-			url="https://nodejs.org/"
-		/>
-		<Skill
-			image="https://www.corsinvest.it/wp-content/uploads/2019/10/mysql-icon-3.png"
-			url="https://www.mysql.com/"
-		/>
-		<Skill
-			image="https://w.namu.la/s/bbde860dbfce579361e8798eae0e121c552405da431c48ba628ae113ee5a400122e79799cf7133364839758121c40b04aaba1b0dadfd478d82fb95af70b79c9fb99265261ca690ee6a41d8343fcc273a"
-			url="https://discordpy.readthedocs.io/en/stable/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg"
-			url="https://socket.io/"
-		/>
-		<Skill
-			image="https://flask-training-courses.uk/images/flask-logo.png"
-			url="https://flask.palletsprojects.com/"
-		/>
-		<Skill
-			image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png"
-			url="https://svelte.dev/"
-		/>
+		{#each skills as skill, index}
+			<Skill image={skill.image} url={skill.url} />
+		{/each}
 	</div>
 	<h2 class="title">who am i</h2>
 	<div class="about">
 		<p class="about-description">
 			hello, i'm a still-learning web developer from italy, after some years of python developing i
-			decided to focus on web development, learning new technologies, currently i'm in love with
-			svelte. besides programming, i'm a photo and video student, here are some of my shots
+			decided to focus on web development, learning new technologies like svelte and react. besides
+			programming, i'm a photo and video student, here are some of my shots
 		</p>
 		<Pics />
 	</div>
@@ -175,10 +191,9 @@
 	}
 
 	.skills {
+		overflow: auto;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
 		margin: 0 100px;
 	}
 
