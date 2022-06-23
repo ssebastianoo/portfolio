@@ -1,11 +1,11 @@
 <script>
 	import { faTwitter, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-	import Box from '$lib/Box.svelte';
-	import Project from '$lib/Project.svelte';
-	import Skill from '$lib/Skill.svelte';
-	import Social from '$lib/Social.svelte';
-	import Pics from '$lib/Pics.svelte';
+  import './app.css';
+	import Box from './lib/Box.svelte';
+	import Project from './lib/Project.svelte';
+	import Skill from './lib/Skill.svelte';
+	import Social from './lib/Social.svelte';
+	import Pics from './lib/Pics.svelte';
 
 	const skills = [
 		{

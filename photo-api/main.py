@@ -1,4 +1,4 @@
-import requests, config, os
+import requests, os
 from flask import Flask, jsonify 
 
 key = os.environ.get('KEY')

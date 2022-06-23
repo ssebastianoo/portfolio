@@ -30,12 +30,6 @@
         margin: 0 20px 20px;
         transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
-        &:not(:hover) {
-            .cursor {
-                color: var(--second-color) !important;
-            }
-        }
-
         &:hover {
             color: var(--first-color);
             background-color: var(--fourth-color);
