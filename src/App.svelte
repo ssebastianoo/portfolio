@@ -33,6 +33,10 @@
 			url: 'https://nextjs.org/'
 		},
 		{
+			image: 'https://everyday.codes/wp-content/uploads/2020/01/0-U2DmhXYumRyXH6X1.png',
+			url: 'https://redux.js.org/',
+		},
+		{
 			image:
 				'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png',
 			url: 'https://sass-lang.com/'
