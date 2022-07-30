@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: black;
+  color: white;
+}
+
+p,
+h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.yellow {
+  color: #e8fd88;
+}
+
+.bg-yellow {
+  background-color: #f0db4f;
+  color: black;
+}
+
+.bg-cobalt {
+  background-color: #0077c8;
+}
+
+.bg-blue {
+  background-color: #3571a2;
+}
+
+.bg-light-blue {
+  color: black;
+  background-color: #5ccfee;
+}
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.bg-red {
+  background-color: #f93c00;
+}
+
+.bg-green {
+  background-color: #3fcf8e;
+}
+
+.bg-pink {
+  background-color: #c45e92;
+}
+
+.container {
+  padding: 40px;
+}
+.container .lines .command {
+  margin-bottom: 5px;
+}
+.container .lines .response {
+  margin-bottom: 15px;
+}
+.container .lines .line ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+.container .lines .line ul a {
+  color: #f8bc62;
+}
+.container .lines .line .neofetch {
+  display: flex;
+  gap: 5px;
+}
+.container .lines .line .neofetch img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .lines .line .neofetch .palette {
+  margin-top: 20px;
+  display: flex;
+}
+.container .lines .line .neofetch .palette div {
+  width: 25px;
+  height: 18px;
+}
+.container .lines .line .neofetch .palette div:nth-child(1) {
+  background-color: white;
+}
+.container .lines .line .neofetch .palette div:nth-child(2) {
+  background-color: black;
+}
+.container .lines .line .neofetch .palette div:nth-child(3) {
+  background-color: #e8fd88;
+}
+.container .lines .line .neofetch .palette div:nth-child(4) {
+  background-color: #f8bc62;
+}
+
+@media (max-width: 600px) {
+  p,
+h2 {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

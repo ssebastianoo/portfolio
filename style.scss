@@ -1,0 +1,135 @@
+$color1: #e8fd88;
+$color2: black;
+$color3: white;
+$color4: #f8bc62;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: $color2;
+    color: $color3;
+}
+
+p,
+h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.yellow {
+    color: $color1;
+}
+
+.bg-yellow {
+    background-color: #f0db4f;
+    color: black;
+}
+
+.bg-cobalt {
+    background-color: #0077c8;
+}
+
+.bg-blue {
+    background-color: #3571a2;
+}
+
+.bg-light-blue {
+    color: black;
+    background-color: #5ccfee;
+}
+
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+.bg-red {
+    background-color: #f93c00;
+}
+
+.bg-green {
+    background-color: #3fcf8e;
+}
+
+.bg-pink {
+    background-color: #c45e92;
+}
+
+.container {
+    padding: 40px;
+
+    .lines {
+
+        .command {
+            margin-bottom: 5px;
+        }
+
+        .response {
+            margin-bottom: 15px;
+        }
+
+        .line {
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+
+                a {
+                    color: $color4;
+                }
+            }
+
+            .neofetch {
+                display: flex;
+                gap: 5px;
+
+                img {
+                    object-fit: cover;
+                }
+
+                .palette {
+                    margin-top: 20px;
+                    display: flex;
+
+                    div {
+                        width: 25px;
+                        height: 18px;
+
+                        &:nth-child(1) {
+                            background-color: $color3;
+                        }
+                        &:nth-child(2) {
+                            background-color: $color2;
+                        }
+                        &:nth-child(3) {
+                            background-color: $color1;
+                        }
+                        &:nth-child(4) {
+                            background-color: $color4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    p,
+    h2 {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
