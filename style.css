@@ -107,6 +107,9 @@ h2 {
 .container .lines .line ul a {
   color: #f8bc62;
 }
+.container .lines .line ul a:hover {
+  color: #e8fd88;
+}
 .container .lines .line .neofetch {
   display: flex;
   gap: 20px;

@@ -120,6 +120,10 @@ h2 {
 
                 a {
                     color: $color4;
+
+                    &:hover {
+                        color: $color1;
+                    }
                 }
             }
 
