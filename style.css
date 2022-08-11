@@ -56,6 +56,10 @@ h2 {
   background-color: #c45e92;
 }
 
+.open_grepper_editor {
+  display: none !important;
+}
+
 .container {
   padding: 40px;
 }
@@ -78,11 +82,15 @@ h2 {
 }
 .container .lines .line .neofetch {
   display: flex;
-  gap: 5px;
+  gap: 20px;
 }
 .container .lines .line .neofetch img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.container .lines .line .neofetch pre {
+  font-size: 6px;
+  line-height: 6px;
 }
 .container .lines .line .neofetch .palette {
   margin-top: 20px;

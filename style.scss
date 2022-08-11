@@ -61,6 +61,10 @@ h2 {
     background-color: #c45e92;
 }
 
+.open_grepper_editor {
+    display: none !important;
+}
+
 .container {
     padding: 40px;
 
@@ -90,10 +94,15 @@ h2 {
 
             .neofetch {
                 display: flex;
-                gap: 5px;
+                gap: 20px;
 
                 img {
                     object-fit: cover;
+                }
+
+                pre {
+                    font-size: 6px;
+                    line-height: 6px;
                 }
 
                 .palette {

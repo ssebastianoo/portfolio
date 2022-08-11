@@ -165,7 +165,33 @@
 
             <div class="line response">
                 <div class="neofetch">
-                    <img src="./assets/seb.png" alt="seb pic" width="100" height="100">
+                    <pre>
+                        .........
+                   ..:::::::::::::::.
+                 .::::::::::::::::::::::...
+               .:::::::::::::::::::::::::::::::..
+             .::::::::::::::::::::::::::::::
+             :::::::::::::::::::::::::::::::.
+            :::::::::::::::::::::::^~::::::::.
+           .:::::::::^:::^~::::::::~5~::::::::
+           :::::::::!?:::JY::::::^:?PY^:::::.:.
+           ::::::::^5J:^JPY:::!~:7Y55PJ:::::. .
+           :::::::^YPJ~JPPJ::!5J:JP555P!:::::.
+           ::::::~YP55555P?:!5P5!Y5555PJ::::::.
+           !JJ!::JP555555P?!555555555555^:::. .
+           JPPJ:~5555555555555555555555Y^~!::
+          :~YP?:JP55555555555555555555555Y!.:
+          . .?!7P5P55555555555555555555P7
+               :^:75P5555555555555555P5!
+                  :7?55555555555555P5Y!:^~^.
+                :!?7^7JY5555555555Y?!!7^^~?7~.
+          .::::^7??7~7?7??JYYYYYJ?!^~77^:^7??7.
+        ^!?!^^^^!???7755J?7777777?~~7??7^:!???7.
+      ^7???7^^^^!????7J55P5YJ????7~7????7^~????!
+    :7?????7^^^^7?????77!7?JJJ?!~^!??????~^?????:
+  .~7???????^^^^7?????7YJ?7!!!!!7J5?7????7~7????!
+ ^7????????7^^:!?????7?PPPPPPPPPPP5?7?????7??????:
+^??????????7^^^7?????7JPPPPPPPPPPP5?7????????????!</pre>
                     <div>
                         <p>
                             <span class="yellow">www</span>@<span class="yellow">seb</span>
@@ -188,6 +214,10 @@
     <script type="text/javascript">
         const uptime = document.getElementById('uptime');
         const date = new Date('Sat Nov 05 2005 00:08:00 GMT+0100');
+
+        setTimeout(() => {
+            if (document.querySelector('.open_grepper_editor')) document.querySelector('.open_grepper_editor').remove();
+        }, 1000);
 
         window.addEventListener('load', () => {
             setInterval(() => {
