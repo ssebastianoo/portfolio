@@ -1,5 +1,6 @@
 $color1: #e8fd88;
-$color2: black;
+// $color2: black;
+$color2: linear-gradient(#9775f3, #c7897e);
 $color3: white;
 $color4: #f8bc62;
 
@@ -11,7 +12,7 @@ body {
 
 body {
     font-family: "Ubuntu Mono", monospace;
-    background-color: $color2;
+    background: $color2;
     color: $color3;
 }
 
@@ -119,7 +120,7 @@ h2 {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background-color: rgba(15, 15, 15);
+            background-color: rgba(0, 0, 0, 0.4);
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             padding: 10px;
@@ -133,11 +134,11 @@ h2 {
         .terminal-content {
             position: relative;
             z-index: 999;
-            background-color: rgba(15, 15, 15, 0.5);
+            background-color: rgba(0, 0, 0, .3);
             padding: 10px;
             border-radius: 10px;
             border-top-left-radius: 0;
-            box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.26);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
         }
     }
 
@@ -154,7 +155,8 @@ h2 {
 
                     .ps1-content {
                         transform: translateY(-100%);
-                        animation: text-from-top .5s cubic-bezier(0.22, 0.61, 0.36, 1) .7s forwards;
+                        animation: text-from-top 0.5s
+                            cubic-bezier(0.22, 0.61, 0.36, 1) 0.7s forwards;
                     }
                 }
 
@@ -176,7 +178,7 @@ h2 {
         .response {
             margin-bottom: 15px;
             opacity: 0;
-            animation: appear .5s cubic-bezier(0.22, 0.61, 0.36, 1) 2.2s
+            animation: appear 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 2.2s
                 forwards;
         }
 
@@ -245,10 +247,6 @@ h2 {
     }
 
     .container {
-        padding: 20px;
-        display: block;
-        min-height: unset;
-
         .lines {
             .command {
                 .body {
@@ -256,24 +254,6 @@ h2 {
                         width: 90px;
                     }
                 }
-            }
-        }
-
-        .terminal {
-            width: unset;
-            max-width: unset;
-            margin: 0;
-
-            .terminal-bar {
-                display: none;
-            }
-
-            .terminal-content {
-                background-color: unset;
-                padding: unset;
-                border-radius: 0;
-                border-top-left-radius: 0;
-                box-shadow: none;
             }
         }
     }
