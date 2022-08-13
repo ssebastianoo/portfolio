@@ -61,6 +61,47 @@ h2 {
     background-color: #c45e92;
 }
 
+@keyframes appear-from-left {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes content-from-top {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes text-from-left {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes text-from-top {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes lines-from-top {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    100% {
+        opacity: 1;
+    }
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -68,10 +109,10 @@ h2 {
     min-height: 100vh;
 
     .terminal {
-
         width: 90%;
         max-width: 1000px;
         margin: 20px 0;
+        animation: appear-from-left 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
 
         .terminal-bar {
             position: relative;
@@ -85,7 +126,7 @@ h2 {
             z-index: -1;
 
             p {
-                opacity: .4;
+                opacity: 0.4;
             }
         }
 
@@ -103,10 +144,40 @@ h2 {
     .lines {
         .command {
             margin-bottom: 5px;
+
+            .body {
+                display: flex;
+
+                .ps1 {
+                    overflow: hidden;
+                    width: 110px;
+
+                    .ps1-content {
+                        transform: translateY(-100%);
+                        animation: text-from-top .5s cubic-bezier(0.22, 0.61, 0.36, 1) .7s forwards;
+                    }
+                }
+
+                .command-text {
+                    overflow: hidden;
+                    position: relative;
+                    width: 50%;
+
+                    span {
+                        position: absolute;
+                        transform: translateX(-100%);
+                        animation: text-from-left 0.5s
+                            cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.5s forwards;
+                    }
+                }
+            }
         }
 
         .response {
             margin-bottom: 15px;
+            opacity: 0;
+            animation: appear .5s cubic-bezier(0.22, 0.61, 0.36, 1) 2.2s
+                forwards;
         }
 
         .line {
@@ -177,6 +248,16 @@ h2 {
         padding: 20px;
         display: block;
         min-height: unset;
+
+        .lines {
+            .command {
+                .body {
+                    .ps1 {
+                        width: 90px;
+                    }
+                }
+            }
+        }
 
         .terminal {
             width: unset;
