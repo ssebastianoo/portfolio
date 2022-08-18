@@ -165,7 +165,7 @@ h2 {
                     position: relative;
                     width: 50%;
 
-                    span {
+                    span:not(.path) {
                         position: absolute;
                         transform: translateX(-100%);
                         animation: text-from-left 0.5s
@@ -176,10 +176,13 @@ h2 {
         }
 
         .response {
-            margin-bottom: 15px;
             opacity: 0;
             animation: appear 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 2.2s
                 forwards;
+        }
+
+        .response:not(:last-child) {
+            margin-bottom: 15px;
         }
 
         .line {
