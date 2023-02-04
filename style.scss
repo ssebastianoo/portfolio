@@ -1,5 +1,5 @@
-$max-width: 450px;
-$color1: rgb(252, 233, 151);
+@use "loading.scss";
+@import "variables";
 
 @font-face {
     font-family: "Dela Gothic One";
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: #161515;
+    background-color: $color2;
     color: rgb(240, 239, 230);
     font-family: "Dela Gothic One";
 }

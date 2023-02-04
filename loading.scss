@@ -1,0 +1,47 @@
+@import "variables";
+
+@keyframes yellow-up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes all-up {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.loading {
+    z-index: 9998;
+
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: all-up 1s cubic-bezier(0.86, 0, 0.07, 1) 1.8s forwards;
+
+    p {
+        color: $color2;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    .yellow-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $color1;
+        transform: translateY(100%);
+        animation: yellow-up 1s cubic-bezier(0.86, 0, 0.07, 1) 0.5s forwards;
+    }
+}
