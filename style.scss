@@ -269,8 +269,30 @@ main {
     }
 }
 
-.more-on-github {
+.more-on {
+    margin-top: 30px;
+    margin-bottom: 0;
     text-align: center;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    div {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: 10px 10px 10px black;
+        border-radius: 3px;
+    }
 }
 
 @media (max-width: 540px) {
