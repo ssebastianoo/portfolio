@@ -1,9 +1,9 @@
 const likedElement = document.getElementById("likedElement");
 const socialIcons = document.getElementsByClassName("social-icon");
+const hover = document.querySelector(".hover");
 
 for (let i = 0; i < socialIcons.length; i++) {
     socialIcons[i].addEventListener("mouseenter", (e) => {
-        console.log("a");
         e.target.src = e.target.src.replaceAll(".png", "-full.png");
         e.target.animate(
             [{ transform: "scale(1)" }, { transform: "scale(1.2)" }],
@@ -76,4 +76,25 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     picsEl.appendChild(div1);
     picsEl.appendChild(div2);
+});
+
+document.addEventListener("mousemove", (e) => {
+    const pos = {
+        x: e.clientX + "px",
+        y: e.clientY + "px",
+    };
+
+    hover.style.left = pos.x;
+    hover.style.top = pos.y;
+
+    hover.animate(
+        {
+            top: pos.y,
+            left: pos.x,
+        },
+        {
+            duration: 3000,
+            fill: "forwards",
+        }
+    );
 });
