@@ -76,25 +76,21 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     picsEl.appendChild(div1);
     picsEl.appendChild(div2);
-});
 
-document.addEventListener("mousemove", (e) => {
-    const pos = {
-        x: e.clientX + "px",
-        y: e.clientY + "px",
-    };
+    if (
+        !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+        )
+    ) {
+        hover.style.display = "block";
+        document.addEventListener("mousemove", (e) => {
+            const pos = {
+                x: e.clientX + "px",
+                y: e.clientY + "px",
+            };
 
-    hover.style.left = pos.x;
-    hover.style.top = pos.y;
-
-    hover.animate(
-        {
-            top: pos.y,
-            left: pos.x,
-        },
-        {
-            duration: 3000,
-            fill: "forwards",
-        }
-    );
+            hover.style.left = pos.x;
+            hover.style.top = pos.y;
+        });
+    }
 });
