@@ -52,31 +52,6 @@ likedElement.addEventListener(
 );
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const picsEl = document.getElementById("pics");
-    const res = await fetch("https://pics.sebastianogirotto.me/");
-    const data = await res.json();
-
-    const div1 = document.createElement("div");
-    const div2 = document.createElement("div");
-
-    const shuffled = data.pics
-        .map((value) => ({ value, sort: Math.random() }))
-        .sort((a, b) => a.sort - b.sort)
-        .map(({ value }) => value);
-
-    for (let i = 0; i < shuffled.length; i++) {
-        const img = document.createElement("img");
-        img.src = shuffled[i];
-
-        if (i % 2 === 0) div1.appendChild(img);
-        else div2.appendChild(img);
-    }
-
-    document.querySelector(".loading-spinner").remove();
-
-    picsEl.appendChild(div1);
-    picsEl.appendChild(div2);
-
     if (
         !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
             navigator.userAgent
