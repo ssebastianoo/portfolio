@@ -4,7 +4,8 @@ const hover = document.querySelector(".hover");
 
 for (let i = 0; i < socialIcons.length; i++) {
     socialIcons[i].addEventListener("mouseenter", (e) => {
-        e.target.src = e.target.src.replaceAll(".png", "-full.png");
+        const file = e.target.src.split(".");
+        e.target.src = file[0] + "-full." + file[1];
         e.target.animate(
             [{ transform: "scale(1)" }, { transform: "scale(1.2)" }],
             {
@@ -24,7 +25,8 @@ for (let i = 0; i < socialIcons.length; i++) {
                 easing: "cubic-bezier(.77,0,.18,1)",
             }
         );
-        e.target.src = e.target.src.replace("-full.png", ".png");
+        const file = e.target.src.split(".");
+        e.target.src = file[0].replace("-full", "") + "." + file[1];
     });
 }
 
