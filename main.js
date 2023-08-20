@@ -5,7 +5,7 @@ const hover = document.querySelector(".hover");
 for (let i = 0; i < socialIcons.length; i++) {
     socialIcons[i].addEventListener("mouseenter", (e) => {
         const file = e.target.src.split(".");
-        e.target.src = file[0] + "-full." + file[1];
+        e.target.src = file[file.length - 2] + "-full." + file[file.length - 1];
         e.target.animate(
             [{ transform: "scale(1)" }, { transform: "scale(1.2)" }],
             {
@@ -26,7 +26,10 @@ for (let i = 0; i < socialIcons.length; i++) {
             }
         );
         const file = e.target.src.split(".");
-        e.target.src = file[0].replace("-full", "") + "." + file[1];
+        e.target.src =
+            file[file.length - 2].replace("-full", "") +
+            "." +
+            file[file.length - 1];
     });
 }
 
